@@ -1,11 +1,19 @@
-# EDA-exploratory-data-analysis-
-Exploratory Data Analysis on Insurance Dataset (Learning Project)
-## what I Learned
---analyzing the all the features through visualization with the help of maplotlib and seaborn like:
--->boxplot , countplot , histplot
---correlation analysis (finding relationship betweeb various features and with output variable )
---using pearson correlation to find which feature has higher relation with output variable
---scaling  of some features  using StandardScaler from scipy.
---converting categorical feature into numerical using label encoding and one hot encoding
---feature engineering of categorical feature (making new feature from a given feature)
-- Chi-square test for categorical features
+# Machine Learning Fundamentals
+
+Hands-on practice of machine learning concepts using Python and real datasets.
+
+## Topics Covered till now:
+- Regression: Linear & Logistic Regression
+- Classification: K-Nearest Neighbors (KNN), Logistic Regression
+- Data Preprocessing: Encoding, Scaling, Missing Value Handling
+- Model Evaluation: Accuracy, Precision, Recall, F1-score, Confusion Matrix
+
+## Tools & Libraries
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Matplotlib & Seaborn
+
+
+##Note:
+This repository is continuously updated as I learn new ML concepts and apply them to practice datasets.

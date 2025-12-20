@@ -1,7 +1,0 @@
-##it requires following things to run
-
-streamlit
-scikit-learn
-pandas
-numpy
-joblib

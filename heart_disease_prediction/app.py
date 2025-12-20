@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib as jb
+import os
 
-model=jb.load("data/KNN_heart.pkl")
-scaler=jb.load("data/heart_scaler.pkl")
-expected_columns=jb.load("data/heart_columns.pkl")
+# Get the current directory of app.py
+BASE_DIR = os.path.dirname(__file__)
+
+# Load pickle files using absolute paths
+model = jb.load(os.path.join(BASE_DIR, "data", "KNN_heart.pkl"))
+scaler = jb.load(os.path.join(BASE_DIR, "data", "heart_scaler.pkl"))
+expected_columns = jb.load(os.path.join(BASE_DIR, "data", "heart_columns.pkl"))
 
 st.title("Heart stroke prediction via samir")
 st.markdown("provide the following info")
@@ -64,4 +69,5 @@ if st.button("predict"):
         st.error("💀 High risk of heat disease ")
     else:
         st.success("😊 low risk of heat disease ")
+
 
